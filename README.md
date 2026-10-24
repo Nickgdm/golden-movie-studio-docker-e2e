@@ -27,8 +27,8 @@ Aplicação de treinamento de QA que integra frontend, backend, persistência SQ
 ```bash
 docker compose up --build
 ```
-4. Acompanhe os logs e confirme que frontend e backend iniciaram corretamente.
-5. Consulte a configuração do Cypress e a pasta `tests/` para executar os cenários. Se os testes estiverem fora dos containers, instale as dependências correspondentes antes de executá-los.
+4. O serviço `cypress` está definido no `docker-compose.yml` e executa `npx cypress run` após os serviços de aplicação iniciarem. Acompanhe os logs para conferir o resultado dos testes.
+5. Os vídeos e screenshots são montados nos diretórios locais `cypress-videos/` e `cypress-screenshots/`, conforme a configuração do Compose.
 
 Para encerrar os serviços:
 ```bash
@@ -59,7 +59,7 @@ Coordenar serviços que dependem uns dos outros, configurar portas e variáveis,
 A atividade permitiu praticar containerização de uma aplicação web e compreender como frontend, backend, banco de dados e testes E2E se integram em um ambiente de desenvolvimento e validação.
 
 ## Considerações finais
-Consulte o `docker-compose.yml` para verificar portas, nomes de serviços e volumes. Não presuma que os testes estejam executando automaticamente apenas porque os containers iniciaram.
+Consulte o `docker-compose.yml` para verificar portas, nomes de serviços e volumes. O serviço de testes é iniciado pelo Compose, mas a conclusão e o resultado dos testes devem ser confirmados nos logs do container `gms-cypress`.
 
 ---
 
