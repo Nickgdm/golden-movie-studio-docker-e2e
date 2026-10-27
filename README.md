@@ -1,16 +1,13 @@
-╔══════════════════════════════════════════════════════╗
-║         GOLDEN MOVIE STUDIO — DOCKER E TESTES E2E      ║
-╚══════════════════════════════════════════════════════╝
-
+<pre>
+╔═════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                  GOLDEN MOVIE STUDIO — DOCKER E TESTES E2E                              ║
+╚═════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+</pre>
 Aplicação de treinamento de QA que integra frontend, backend, persistência SQLite e testes end-to-end com Cypress, utilizando Docker Compose para organizar os serviços.
-
-══════════════════════════════════════════════════════
 
 ## Sobre o projeto
 
 O repositório permite estudar a inicialização coordenada de uma aplicação web e a execução de testes E2E em um ambiente baseado em containers.
-
-══════════════════════════════════════════════════════
 
 ## Objetivos
 
@@ -18,8 +15,6 @@ O repositório permite estudar a inicialização coordenada de uma aplicação w
 - Integrar frontend e backend de uma aplicação de exemplo.
 - Executar testes end-to-end com Cypress.
 - Consultar logs, vídeos e capturas de tela para auxiliar a análise.
-
-══════════════════════════════════════════════════════
 
 ## Tecnologias e ferramentas
 
@@ -30,15 +25,11 @@ O repositório permite estudar a inicialização coordenada de uma aplicação w
 - Cypress
 - HTML, CSS e JavaScript
 
-══════════════════════════════════════════════════════
-
 ## Pré-requisitos
 
 - Docker Engine e Docker Compose instalados.
 - Git instalado.
 - Portas utilizadas pelos serviços disponíveis no computador.
-
-══════════════════════════════════════════════════════
 
 ## Como executar
 
@@ -59,8 +50,6 @@ Para encerrar os serviços:
 docker compose down
 ```
 
-══════════════════════════════════════════════════════
-
 ## Estrutura do projeto
 
 ```text
@@ -74,16 +63,12 @@ atividade-docker/
 └── README.md
 ```
 
-══════════════════════════════════════════════════════
-
 ## Desafios práticos
 
 - Coordenar serviços que dependem uns dos outros.
 - Configurar portas e variáveis de ambiente.
 - Verificar a persistência de dados quando aplicável.
 - Executar testes contra o ambiente inicializado.
-
-══════════════════════════════════════════════════════
 
 ## Boas práticas
 
@@ -92,22 +77,16 @@ atividade-docker/
 - Consultar logs para auxiliar o diagnóstico.
 - Confirmar o resultado dos testes nos logs do container `gms-cypress`.
 
-══════════════════════════════════════════════════════
-
 ## Aprendizados
 
 A atividade permite praticar a containerização de uma aplicação web e compreender como frontend, backend, banco de dados e testes E2E se integram em um ambiente de desenvolvimento e validação.
 
-══════════════════════════════════════════════════════
-
 ## Considerações finais
 
 Consulte `docker-compose.yml` para verificar portas, nomes de serviços e volumes. Embora o serviço de testes seja definido no Compose, o resultado da execução deve ser confirmado nos logs do container `gms-cypress`.
-
-══════════════════════════════════════════════════════
-
-## Formação e natureza da atividade
-
-Este projeto foi desenvolvido como uma **atividade facultativa** no contexto dos estudos de Quality Assurance (QA), durante a formação da EBAC — Escola Britânica de Artes Criativas e Tecnologia. Seu objetivo é praticar e consolidar conhecimentos de Docker, integração de serviços e testes E2E.
-
-══════════════════════════════════════════════════════
+<pre>
+╔═════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║       Atividade desenvolvida durante a formação profissionalizante em Quality Assurance (QA) pela       ║
+║                     EBAC — Escola Britânica de Artes Criativas e Tecnologia                             ║
+╚═════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+</pre>
